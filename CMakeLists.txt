@@ -18,9 +18,6 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 enable_testing()
 
-# Executable for the main program
-add_executable(main src/main.cc src/api.cc src/api.h)
-
 # Executable for the tests
 add_executable(test_main test/test_main.cc src/api.cc src/api.h)
 target_link_libraries(test_main gtest_main)

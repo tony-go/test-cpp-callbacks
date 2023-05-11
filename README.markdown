@@ -1,10 +1,13 @@
 # Run
 
-```test
-mkdir build
-cd build
-cmake ..
-make
-./bin/main          # Run the main program
-./bin/test_main     # Run the tests
+Create a `build` directory and change the directory.
+
+```sh
+mkdir build && cd build
+```
+
+Generate, build and run tests.
+
+```sh
+cmake .. && make && ctest
 ```
